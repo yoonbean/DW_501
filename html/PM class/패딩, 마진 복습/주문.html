@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>box_2_test</title>
+    <style>
+        #menu{
+            width:400px;
+            height:600px;
+            background:#CEFBC9;
+            margin:0 auto;
+        }
+
+        #name{
+            font-size:25pt;
+            font-weight:700;
+            padding:50px 0 0 80px;
+        }
+
+        .div1{
+            padding-left:10px;
+        }
+        #sec{
+            width:98%;
+            height: 30px;
+            font-size:15pt;
+        }
+
+        #radio1{
+            margin:10px 15px 10px 15px;
+            font-size:15pt;
+        }
+
+        #radio2{
+            margin:10px 15px 10px 15px;
+            font-size:15pt;
+        }
+
+        #text1{
+            width:90%;
+            height:30px;
+            margin:0 0 20px 10px;
+        }
+
+        #text2{
+            width:90%;
+            height:200px;
+            margin:0 0 0 10px;
+            font-size:15pt;
+        }
+
+        .butt{
+            width:91%;
+            height:40px;
+            font-size:15pt;
+            margin:20px 0 0 10px;
+            background:#0d6efd;
+            color:white;
+            border:none;
+            border-radius:5px;
+        }
+
+        .butt:hover{
+            color:#0d6efd;
+            background:white;
+            cursor: pointer;
+            transition:2s;
+        }
+
+       
+    </style>
+    </head>
+    <body>
+        <div id="menu">
+            
+            <div id="name">빽다방 메뉴판</div>
+
+            <div>
+                <div class="div1">
+                    <select id="sec">
+                        <option disabled selected>메뉴를 선택해주세요.</option>
+                        <option>에스프레소</option>
+                        <option>아메리카노</option>
+                    </select>
+                </div>
+
+            <div id="radio1">
+                ICED <input type="radio" name="m1">
+                HOT <input type="radio"  name="m1">
+            </div>
+
+            <div id="radio2">
+                L size : <input type="radio" name="m2">
+                M size : <input type="radio" name="m2">
+            </div>
+
+            <div>
+                <input  id="text1" type="number" min="0" max="50" placeholder="수량을 입력해주세요.">
+            </div>
+            
+            <div>
+                <textarea id="text2" placeholder="추가 사항이 있으면 적어주세요."></textarea>  
+            </div>
+
+            <button class="butt">주문하기</button>
+        </div>
+
+    
+    </body>
+</html>
