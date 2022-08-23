@@ -9,38 +9,91 @@ body{
     display:flex;
     flex-direction: column;
     width:100%;
-    height:100vh;
+    height:200vh;
 }
 
 .header{
-    flex-basis:5%;
-    background:lightgreen;
+    flex-basis:10%;
+    background:#fff;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.list_wrap{
+    background: #243c84;
+    flex-basis: 50%;
+    font-size:13px;
+    font-family:나눔고딕;
+}
+
+.li1 li{
+    list-style:none;
+    float: left;
+    padding:5px 5px 0 5px;
+    color:#fff;
+    font-size:13px;
+    font-family:나눔고딕;
+    margin-top:6px;
+}
+
+.li2_wrap{
+    width:900px;
+    float:right;
+}
+
+.li2 li{
+    padding:5px 5px 0 5px;
+    color:#fff;
+    list-style:none;
+    text-align:right;
+    float: left;
+}
+#srh_wrap{
+    width:200px;
+    height:50px;
+    display:flex;
+
+}
+
+#srh_word{
+    width:122px;
+    height:28px;
+    border:none;
+}
+
+#srh_butt{
+    width:38px;
+    height:30px;
+    border:none;
+}
+#butt_img{
+    color:#fff;
+}
+
+#logo{
+    margin-top:30px;
+    margin-left:800px;
+}
+
+.logo_menu{
+    margin-left:350px;
+}
+
+.logo_menu ul li{
+    width:140px;
+    list-style:none;
+    float: left;
+    padding-left:30px;
 }
 
 .center{
-    background:red;
+    background:#fff;
     flex-basis:60%;
-    display:flex;
-    justify-content:space-between;
-    padding:2%;
 }
 
 .footer{
     background:#262626;
     flex-basis:15%;
-}
-
-.nav{
-    background:azure;
-    flex-basis:18%;
-}
-
-.section{
-    background:tomato;
-    flex-basis:40%;
-}
-
-.aside{
-    background:yellow;
-    flex-basis:18%;
+    color:#fff;
 }
