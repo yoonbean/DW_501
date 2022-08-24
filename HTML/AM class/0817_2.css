@@ -1,0 +1,29 @@
+#div1{
+    width:50px;
+    height:50px;
+    background:red;
+}
+
+#div2{
+    width:150px;
+    height:50px;
+    background:yellow;
+    margin:0 0 0 50px;
+    z-index:100;
+    position:fixed;
+    /* z축은 숫자가 클 수록 앞으로 튀어 나옴 */
+}
+
+#div3{
+    width:150px;
+    height:2000px;
+    background:green;
+    left:50px;
+    top:10px;
+}
+/* position
+    relative: 상위 태그를 기준으로 그려짐.
+    absolute: 0.0부터 강제 시작. 
+    fixed: 현재 출력되는 모니터 화면을 기준으로 위치가 고정.*/
+
+body{margin:0;}

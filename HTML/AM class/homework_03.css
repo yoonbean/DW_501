@@ -1,0 +1,17 @@
+/* board_list.css */
+
+#board_mask{
+    width:100%;
+    height:auto;
+    margin-top:50px;
+}
+
+.board_wrap{
+    width:1200px;
+    height:auto;
+    margin:0 auto;
+}
+
+.btitle{
+    text-align: center;
+}
