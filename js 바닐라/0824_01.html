@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <input id="name" type="text">
+        <button onclick="doClick()">클릭</button>
+
+        <h2>메뉴 선택</h2>
+        <select id="menu">
+            <option value="null">메뉴를 선택해주세요.</option>
+            <option value="아아">아이스아메리카노</option>
+            <option value="라떼">카페라떼</option>
+            <option value="모카">카페모카</option>
+        </select>
+        <input id="count" type="number" min="0" max="50" placeholder="수량 입력">
+        ICED : <input type="radio" name="type" value="ice" checked>
+        HOT : <input type="radio" name="type" value="hot">
+        <button onclick="doOrder()">주문하기</button>
+
+    </body>
+    <!-- 프로그래밍은 위에서 아래로 해석 따라서 html부터 실행 후 script 실행을 위해 body 아래에 script 작성 -->
+    <script>
+        
+        var x = 10;
+        if(x == 10){
+            console.log('x는 10입니다!');
+        }
+        if(x > 5){
+            console.log('if 실행');
+        }
+        
+        var word = '짜장면';
+        if(word == '짜장면'){
+            console.log('오늘은 짜장면을 먹었어요!');
+        }
+
+        // 문제) if로 깁밥을 비교해서 맞으면 '오늘 김밥을 먹었어요' 출력
+        var word2 = '김밥' ;
+        if(word2 == '돈까스'){
+            console.log('오늘은 김밥을 먹었어요');
+        }else{
+            console.log('오늘은 돈까스를 먹었어요');
+        }
+
+        function doClick(){ //함수 시작
+            var name = document.getElementById('name').value;
+            console.log(name);
+            if(name == '짜장면'){
+                console.log('오늘 짜장면을 먹었어요~');
+            } //if 끝
+        } //함수 끝
+
+        function doOrder(){
+            var selectedMenu = document.getElementById('menu').value;
+            console.log(selectedMenu);
+
+            // 문제2) 아아를 선택했으면, "죄송합니다 아아는 오늘 품절입니다." 출력
+            // 문제3) 메뉴를 선택하지 않고 주문하기 버튼을 누르면 "메뉴를 선택해주세요! 출력" 
+
+            if(selectedMenu == '아아'){
+                console.log('죄송합니다 아아는 오늘 품절입니다.');
+            }
+
+            if(selectedMenu == 'null'){
+                console.log('메뉴를 선택해주세요!');
+            }
+
+            //문제3) 수량을 10개 초과하면 "죄송합니다 1인 10잔까지 주문 가능합니다."
+            var count = document.getElementById('count').value;
+            console.log(count);
+            if(count > 10 ){
+                console.log('죄송합니다 1인 10잔까지만 주문 가능합니다.');
+            }
+
+            var type = document.querySelector('input[name=type]:checked').value;
+            console.log(type);
+        }
+
+
+        
+
+
+    </script>
+</html>
