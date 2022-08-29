@@ -1,1 +1,43 @@
 /* gallery_view.html */
+#view_box{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+#view_wrap{
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#title{
+    font-size: 20px;
+}
+
+#image{
+    width: 600px;
+    height: auto;
+}
+
+#image img{
+    max-width: 600px;
+}
+
+#bt{
+    width: 300px;
+    display: flex;
+    height: 30px;
+}
+
+#bt a{
+    text-align: center;
+    margin-right: 20px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    background: black;
+    text-decoration: none;
+    color: #fff;
+}
