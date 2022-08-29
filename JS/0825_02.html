@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript 주의할 점</title>
+</head>
+<body>
+    <script>
+        // javascript는 변수이름 중복을 허용함.
+        // 데이터 타입이 var 하나로 통일 되기 때문에 문자 10과 숫자 10은 같다고 인식함.
+        // 따라서 javascript 에만 있는 === 라는 문법을 써야함.(===은 데이터의 타입까지 체크해주는 문법.)
+        var x = 10;
+        var y = '10';
+        if( x === y ){
+            console.log('우리는 같아!')
+        }else{
+            console.log('우리는 달라.')
+        }
+
+    </script>
+</body>
+</html>
