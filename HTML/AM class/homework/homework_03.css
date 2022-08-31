@@ -1,0 +1,221 @@
+
+
+#board_mask{
+    width:100%;
+    height:auto;
+    margin-top:50px;
+}
+
+.board_wrap{
+    width:1200px;
+    height:auto;
+    margin:0 auto;
+}
+
+.btitle{
+    font-size:25pt;
+    text-align:center;
+    width:1200px;
+    height:50px;
+    line-height:50px;
+}
+
+#notice_list{
+    width: 1200px;
+    list-style-type:none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.list_wrap{
+    width:1200px;
+    height:5000px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.list_wrap{
+    list-style-type:none;
+    padding:0;
+    margin:20px 0 0 0px;
+    width:1200px;
+    height:1000px;
+}
+
+.bli{
+    display:flex;
+    width:1200px;
+    height: auto;
+    line-height:auto;
+    border:1px solid lightgrey;
+    text-align: center;
+}
+
+.test_title_list{
+    font-weight:700;
+    font-size:13pt;
+}
+
+/* 게시판 각 항목 */
+
+.num_title{ 
+    font-size: 15px;
+    width: 5%;
+    border:1px solid lightgrey;
+}
+.type_title{
+    font-size: 20px;
+    width:45%;
+    border:1px solid lightgrey;
+}
+.check1_title{
+    font-size: 15px;
+    width: 5%;
+    border:1px solid lightgrey;
+}
+.type_title{
+    font-size: 20px;
+    width: 45%;
+    border:1px solid lightgrey;
+}
+.check2_title{
+    font-size: 15px;
+    width: 5%;
+    border:1px solid lightgrey;
+}
+
+
+.num{ 
+    font-size: 15px;
+    width: 5%;
+    border:1px solid lightgrey;
+}
+.type1{
+    font-size: 15px;
+    width:45%;
+    border:1px solid lightgrey;
+}
+.check1{
+    font-size: 15px;
+    width: 5%;
+    border:1px solid lightgrey;
+}
+.type2{
+    font-size: 15px;
+    width: 45%;
+    border:1px solid lightgrey;
+}
+.check2{
+    font-size: 15px;
+    width: 5%;
+    border:1px solid lightgrey;
+}
+
+.total1{
+    font-size: 15px;
+    width: 640px;
+    border:1px solid lightgrey;
+}
+
+.total_numb1{
+    font-size: 15px;
+    width: 5%;
+    border:1px solid lightgrey;
+}
+
+.total2{
+    font-size: 15px;
+    width: 570.66px;
+    border:1px solid lightgrey;
+}
+
+.total_numb2{
+    font-size: 15px;
+    width: 5%;
+    border:1px solid lightgrey;
+}
+
+#total_box{
+    width:50px;
+    height: 20px;
+}
+
+.qusetion{
+    width:1200px; 
+    font-size: 13pt;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 60px;    
+    line-height: 31px;
+}
+
+#question_box{
+    width: 100px;
+    line-height: 31px;
+}
+
+.end{
+    width: 1201px;
+    height: 31px;
+    background: grey;
+    border:1px solid lightgray;
+}
+
+
+.test_result{
+    display:flex;
+    width:1200px;
+    height: 100px;
+    line-height:auto;
+    border:none;
+    margin-top: 50px;
+}
+
+#sc_numb{
+    width: 100px;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+}
+
+#name{
+    width: 100px;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+}
+
+.result_type_title{
+    margin-left: 100px;
+}
+
+.result_type{
+    width: 30px;
+    height: 30px;
+}
+
+#notice_list2{
+    width: 1200px;
+    list-style-type:none;
+    padding: 0;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.mbti_type{
+    font-size: 15px;
+    width: 10%;
+    border:1px solid lightgrey;
+}
+
+.charset{
+    font-size: 15px;
+    width: 60%;
+    border:1px solid lightgrey;
+}
+
+.job{
+    font-size: 15px;
+    width: 40%;
+    border:1px solid lightgrey;
+}
