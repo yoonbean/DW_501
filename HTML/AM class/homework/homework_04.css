@@ -14,11 +14,13 @@ body, ul, li{
 #header{
     display: flex;
     width: 100%;
-    height: 100px;
+    height: 120px;
+    margin-left: 300px;
 }
 
 .logo{
-    
+    margin-right: 100px;
+    margin-top: 40px;
 }
 
 .logo img{
@@ -26,15 +28,20 @@ body, ul, li{
     max-height: 100px;
 }
 
+.menu_list{
+    margin-top: 70px;
+}
 .menu_list li{
     list-style: none;
     float: left;
     font-size: 15pt;
     font-weight: 700;
+    padding-right: 110px;
 }
 .login li{
     list-style-type: none;
     float: left;
+    padding-right: 50px;
 }
 
 #center{
