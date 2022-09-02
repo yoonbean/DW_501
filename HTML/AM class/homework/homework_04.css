@@ -18,6 +18,10 @@ body, ul, li{
     margin-left: 300px;
 }
 
+#center{
+    position: relative;
+}
+
 .logo{
     margin-right: 100px;
     margin-top: 40px;
@@ -52,3 +56,13 @@ body, ul, li{
     background: #F2FFED;
 }
 
+.main_img{
+    width:100%;
+}
+
+.main_img img{
+    position: absolute;
+    right:33%;
+    width: 1000px;
+    height: ;
+}

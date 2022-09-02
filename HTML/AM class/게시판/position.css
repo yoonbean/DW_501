@@ -1,0 +1,56 @@
+/* position.css */
+
+#box{
+    border:1px solid red;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    top:50px;
+    left:100px;
+}
+
+#box1{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    position: absolute;
+    top:80px;
+    left: 200px;
+}
+
+#box2{
+    width: 300px;
+    height: 150px;
+    background: gray;
+    position: relative;
+    left:100px;
+    top:50px;
+}
+
+#box3{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+
+#box4{
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: absolute;
+    top:10px;
+}
+/* position의 종류 */
+/* static, relative, absolute, fixed, sticky */
+/* 좌표지정 불가능
+    static, sticky */
+/* 좌표지정 가능 
+    relative, absolute, fixed*/
+
+/* fixed: 브라우저 전체 width 크기에서 위치 지정
+          브라우저 크기를 줄이면 같이 따라간다. */
+
+
+/* absolute: 상위 태그에 relative가 지정 된 위치부터 위치 지정 가능 */
+
+/* relative: 상위 태그의 위치 기준으로 상대적 위치 지정. */
