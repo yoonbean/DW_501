@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>0906.html</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        
+        var x = 20;  // x라는 이름을 가진 변수 생성.
+        x = 20;   // x라는 변수 재활용
+
+        var x = 20;  // 자바스크립트가 허용하는 문제점. 애초에 변수이름을 중복해서 선언 불가.
+        // 위와 같은 문제점을 해결하기 위해 let 이라는 데이터 타입 사용.
+
+        // let y = 10;
+        // let y = 10;  //오류 발생 why? 변수 이름이 중복되기 때문.
+
+        // for문 과 배열 복습
+        // 문제1. 1부터 30까지 for문을 사용하여 출력하시오.
+        for(var i=1; i<=30; i++){
+           console.log(i); 
+        }
+        
+        // 문제2. for문을 사용하지 않고 배열 안의 숫자를 더하시오.
+        // 방법1
+        var array = [5, 10];
+        var item1 = array[0];
+        var item2 = array[1];
+        var result = item1 + item2;
+        console.log(result);
+        
+        // 방법2
+        var sum = 0;
+        sum = array[0] + array[1];
+        console.log(sum);
+
+        // 문제3. for문을 이용하여 짝수만 출력하시오. 
+        var array = [2,4,9,10];
+        for(var i=0; i<array.length; i++){
+            var x = array[i];
+            if(x%2 == 0){
+                console.log("짝수는" + x + "입니다.");
+            }
+        }
+
+        // 문제4. 배열 평균 구하기. 정수를 담고 있는 배열 array의 평균값을 구하시오.
+        var array = [1,2,3,4];
+        var answer0 = 0;
+        var sum1 = 0;
+        for(var i=0; i<array.length; i++){
+            sum1 = sum1 + array[i];
+        }
+        answer0 = sum1 / array.length;
+        console.log("1번 정답은 => "+answer0);
+
+        //문제5. 안녕안녕안녕?
+        // 길이가 n이고, "안녕안녕안녕...."와 같은 패턴을 유지하는 문자열을 출력할 수 있게 로직을 완성하세요. 
+        // 예를들어 n이 4이면 "안녕안녕"을 리턴하고 3이라면 "안녕안"를 리턴하면 됩니다.
+        var n = 4;
+        var answer1 = "";
+        var an = "안";
+        var nyeong = "녕";
+        for(var i=0; i<n; i++){
+            if(i%2 == 0){
+                answer1 = answer1 + an 
+            }
+            if(i%2 != 0){
+                answer1 = answer1 + nyeong;
+            }
+        }
+        console.log("2번 정답은 => "+answer1);
+
+        //문제6. 없는 숫자 더하기
+        //0부터 9까지의 숫자 중 일부가 들어있는 정수 배열 numbers가 있습니다.
+        //numbers에서 찾을 수 없는 0부터 9까지의 숫자를 모두 찾아 더한 수를 출력하시오.
+    
+        var numbers = [1,2,3,4,6,7,8,0]; //5, 9가 numbers에 없으므로, 5 + 9 = 14가 정답입니다.
+        var answer2 = 0;
+        // 방법1
+        var compare = [1,2,3,4,5,6,7,8,9,0];
+        var sum1 = 0;
+        var sum2 = 0;
+        for(var i=0; i<numbers.length; i++){
+            sum1 = sum1 + numbers[i];
+        }
+        for(var i=0; i<compare.length; i++){
+            sum2 = sum2 + compare[i];
+        }
+        answer2 = sum2 - sum1;
+        console.log("3번 정답은 => "+answer2);
+
+        // 방법2
+        var sum3 = 45;
+        var sum4 = 0;
+        for(var i=0; i<numbers.length; i++){
+            sum4 = sum4 + numbers[i];
+        }
+        answer2 = sum3 - sum4;
+        console.log("3번 정답은 => "+answer2);
+        
+    </script>
+</html>
