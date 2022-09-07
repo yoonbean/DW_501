@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+     //  국어, 수학, 영어, 역사 점수를 입력받아서 총점과 평균을 구하여 출력.
+            //  출력 예시) 국어 : 80점
+            //             수학 : 30점
+            //             영어 : 90점
+            //             역사 : 70점
+            //             총점 : 270점 평균 : 67.5 점
+    document.write(" 중간고사 성적" + "<br>")
+    
+    var kor = parseInt(prompt("국어점수"));
+
+    var mat = parseInt(prompt("수학점수"));
+
+    var eng = parseInt(prompt("영어점수"));
+
+    var his = parseInt(prompt("역사점수"));
+
+    var total = kor + mat + eng + his;
+    var avg = total/4;
+
+    document.write("국어" + kor);
+    document.write("<br>" + "수학" + mat);
+    document.write("<br>" + "영어" + eng);
+    document.write("<br>" + "역사" + his);
+    document.write("<br>" + "총점" + total + "평균" + avg);
+</script>
+</html>

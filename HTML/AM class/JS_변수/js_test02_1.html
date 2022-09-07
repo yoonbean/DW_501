@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>js_test02.html</title>
+        
+        <script type="text/javascript">
+            
+            var num = 10;     //변수 중복 선언 가능, 변수 값 재할당 가능.
+                num = 20;
+            var num = 20;
+
+            let kor1 = 90;     //중복 선언 불가, 변수 값 재할당 가능.
+
+            const pi = 3.14;  //변수 선언과 초기화를 동시에 진행.
+                              //변수 값 재할당 불가.
+            
+            // var, let 으로 변수를 선언하고 초기화 이후에 다른 값을 저장 할 수 있다. 전역 변수에서 사용.
+            // const 로 변수를 선언하고 초기화 이후에 다른 값을 저장 할 수 없다.(상수). 지역 변수에서 사용.
+            // const는 불변의 값. 
+            // 개발자 사이에서 const에 저장된 값을 변경하지 말고 계속 사용해달라. 는 의미로 사용하기도 함.
+
+            // 전역 변수 : 현재 스크립트 파일 내에서 어디에서나 사용가능한 변수.
+            // 지역 변수 : 자신이 선언된 위치에서만 사용 가능.
+
+            var b = 111; //전역 변수
+            for(var i=0; i<10; i++){
+                let a = 10; //지역 변수
+                a = b + 10;
+            }
+
+            for(k=1; k<5; k++){
+                b = b + k;
+            }
+
+            // var num = prompt("숫자 입력 : ");
+            // // prompt : 웹에서 입력을 받아오기 때문에 문자열로 출력한다.
+            
+            document.write( typeof(num));
+
+            document.write("<br>")
+
+            // // 문자열을 숫자로 바꾸는 방법.
+            // // 1. number()를 이용. 오직 순수하게 숫자로 변환이 가능한 것만 가능. 문자와 숫자가 섞여있다면 변환 불가.
+            // // 2. parseInt() 를 이용. 숫자와 문자가 섞여 있을 때, 숫자만 변환해줌. 하지만 처음 시작이 문자라면 parseInt도 변환 불가.
+
+            var num1 = Number(prompt("숫자 입력하시오 : "));
+
+            document.write(typeof(num1));
+
+            document.write("<br>")
+
+            var num2 = parseInt(prompt("숫자를 입력해주세요 : "));
+
+            document.write(typeof(num2));
+
+            // // isNaN : 숫자로 변환 가능한지 불가능한지 알 수 있음.
+            // // true : 숫자 변환 불가, flas : 숫자 변환 가능.
+            // alert(isNaN(num));
+
+
+    
+
+
+            
+        
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>

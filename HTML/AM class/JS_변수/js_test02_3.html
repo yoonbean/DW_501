@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var num = 10;
+        var num1 = 30;
+        var num2 = num + num2;
+
+        // 연산자
+        // 대입 연산자 : = (오른쪽 값을 왼쪽으로 대입, 저장)
+        // 산술 연산자 : +, -, *, /, %
+        
+        // 증감 연산자 : ++ , --
+
+        var a = 10;
+        var b = 0;
+        // 변수 뒤에 증감 연산자가 붙은 경우는 최후순. b=a++ -> b에 a를 먼저 대입하고 ++.
+        // 변수 앞에 증감 연산자가 붙은 경우 b= ++a -> ++ 먼저 동작한 후 b에 a를 대입.
+
+        // 비교 연산자 : >, <, >=, <=  (대소 구분)
+        //              : ==, !=, === (등가 구분) 
+        //              두 개의 피연산자를 가져야 함. 만약 2개 이상을 다뤄야한다면 논리 연산자가 필요함
+        
+        var tall = 156;
+        // 바이킹 입장 가능 키 제한 150 이상 190 이하
+        // document.write(tall >= 150 && tall <=190);
+
+        // 논리 연산자 : && (and), || (or), !(not)
+        // and 연산자는 양쪽 식이 모두 true일 경우에만 true.
+        // or 연산자는 양쪽 식 중 한쪽이라도 true라면 true.
+        // not 연산자 : !(tall<140) 해당 결과가 true 라면 flase로, flase 라면 true로 바꾼다.
+
+    
+        // 두  변수 중에서 num3에 큰 숫자를 입력했을 경우. 두 변수를 비교하여 참이 나오게 만드시오.
+
+        var num3 = parseInt(prompt("숫자를 입력하시오."));
+        var num4 = parseInt(prompt("숫자를 입력하시오."));
+
+        // document.write(num3>num4);
+
+        // 세 변수 중에서 num3에 큰 숫자를 입력했을 경우. 세 변수를 비교하여 참이 나오게 만드시오.
+        var num5 = parseInt(prompt("숫자를 입력하시오."));
+
+        document.write(num3 > num4 &&  num3 > num5);
+
+        // 조건 연산자(삼항 연산자) : 비교 연산자와 논리 연산자를 사용하여 만든 연산자.
+        //                          : 조건식 ? true : flase ;
+        //                          : 조건식 뒤에 ?(앞에 있는 조건식이 true or flase인지 묻는 것.)
+        //                            true면 실행내용 / flase면 실행 내용
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
