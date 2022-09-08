@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_test03.html</title>
+    <script type="text/javascript">
+
+        // var num1 = 10;
+        // var num2 = 20;
+        // var num3 = 0;
+
+        // num3 = num2 % num1; // % : 나누기연산(결과 값이 나머지 값)
+        // num3 = num2 > num1; // 비교 연산자(결과는 true or false)
+
+        // num2 = 15; num1 = 29;
+        // num3 = num2 >= num1; // false
+        // num2 = 11; num1 = 12;
+        // num3 = num2 != num1; // true
+        // num3 = num2 == num1; // false
+
+        // var result;
+        // num1 = 21; num2 = 36; num3 = 25;
+        // result = num2 > num1 && num2 > num3; // true 논리 연산자 &&(and)는 양쪽 모두가 true일 때만 true.
+        //                                      // true && true -> true,  true && false -> false
+
+        // result = num1 > num2 || num2 < num3; // true 논리 연산 ||(or)는 한쪽이라도 true면 true
+        //                                      // true || false -> true, false || false -> false
+        // result = (num1 > 10 || num2 <40) && (num3 > 100 && num2 < 10); 
+        // // 21은 10보다 크고(true)           // num3 > 100 (false)   
+        // //  최종적으로는 false
+
+
+        // 조건 연산자 : 조건식 ? 참일 경우 실행 내용 : 거짓일 경우 실행 내용;
+
+        // var num1 = parseInt(prompt("정수 입력"));
+        // var num2 = parseInt(prompt("정수 입력"));
+
+        // var result = num1 > num2 ? "큰 수 :" + num1 : "작은 수" + num2;
+        // document.write(result);
+        // 조건 연산자에서 참과 거짓에 해당하는 부분에는 
+        // 변수, 데이터(정수, 실수, 문자열), 계산식, 조건연산자, 함수 등등 사용 가능
+        // but 대입연산자는 불가.
+
+        // 문제1. 바이킹 탑승 조건 키 130 이상
+        // var tall = parseInt(prompt("신장을 입력해주세요."));
+
+        // var result1 = tall > 130 ? "탑승 가능!" : "탑승 불가능!";
+        // document.write(result1);
+
+        // 문제2. 세개의 정수를 입력받아 가장 큰 수 출력
+        // 방법1.
+        // var x = parseInt(prompt("첫번째 정수 입력"));
+        // var y = parseInt(prompt("두번째 정수 입력"));
+        // var z = parseInt(prompt("세번째 정수 입력"));
+
+        // var result2 = 0;
+        // var result2 = x > y ? (x > z ? x : z) : ( y > z ? y : z);
+        // document.write(result2);
+
+        // // 방법2.
+        // var result3 = 0;
+        // var result3 = x > y ? x : y;
+        // result3 = result3 > z ? result3 : z;
+
+        // document.write(result3);
+
+        // // 방법3
+        // var result4 = 0;
+        // result4 = x > y && x > z ? x : result4;
+        // result4 = y > x && x > z ? y : result4;
+        // result4 = z > x && z > y ? z : result4;
+
+        // 문제3. 숫자를 입력하여 4의 배수에 해당하는지 출력
+        // var num = parseInt(prompt("숫자를 입력하시오."));
+        // var result = num % 4 == 0 ? num + "은(는) 4의 배수가 맞습니다." : num + "은(는) 4의 배수가 아닙니다." ;
+        // document.write(result); 
+
+        // 문제4. 주차장 요금 계산. 주차장 기본 요금은 30분에 1,000원/ 30분 이후 10분 초과 당 100원 부과(ex)39분이면 1,000원)
+        // 2시간 이상 주차 시 기본요금은 1,500원으로 변경.
+        // 이 때, 주차시간 입력하여 요금 출력, 주차시간은 분 단위로만 입력
+        //  예시) 주차시간 14분 => 요금 1,000원
+        // 방법1.
+        var time = parseInt(prompt("주차 시간을 입력해주세요."));
+        var pay = 0;
+        var pay1 = 0;
+        // pay = time > 30 ? time : 30;
+        pay1 = time >= 120 ? parseInt((time-120)/10)*100+1500 : parseInt((time-30)/10)*100 + 1000;
+        
+        document.write(pay1);
+
+        // 방법2.
+        var p = parseInt((prompt("주차시간"))/10);
+        var b = 1000;
+        var d = 1500;
+        var t = 100;
+        p = (p < 3) ? b : p < 12 ? b + (p - 3) * t : (p - 12 ) * t + d ;
+        document.write(p);
+
+        // 방법3.
+        var time = parseInt(prompt("주차 시간 :"));
+        var cost = 1000;
+        cost = time >= 120 ? 1500 : cost;
+        
+        var ptime = time >= 120 ? time - 120 : time - 30;
+        // 총 주차 시간에서 기본 시간 제외
+        
+        var price = parseInt(ptime/10)*100 + cost;
+        
+        price = time < 40 ? cost : price; 
+
+        document.write("주차시간 : " + time + "분" + "주차요금 : " + price);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
