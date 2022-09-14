@@ -1,0 +1,79 @@
+body, div, ul{
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header{
+    width: 2000px;
+    height: 100px;
+    background: #6a84b7;
+    margin: 0 auto;
+    display: flex;
+}
+
+#logo_box{
+    width: 500px;
+    height: 100px;
+    background: red;
+}
+
+#logo_menu{
+    width: 1500px;
+    height: 100px;
+    background: blue;
+}
+
+#content{
+    width: 2000px;
+    height: 800px;
+    background: black;
+    margin: 0 auto;
+    display: flex;
+}
+
+#aside_content{
+    width: 500px;
+    height: 800px;
+    background: blue;
+}
+
+#my_info{
+    width: 500px;
+    height: 200px;
+    background: green;
+}
+
+#aside_menu{
+    width: 500px;
+    height: 600px;
+    background: yellow;
+    position: relative;
+}
+
+#aside_menu_list{
+    width: 200px;
+    height: 200px;
+    background: black;
+    position: absolute;
+    right:166px;
+    top: 50px;
+}
+
+#aside_menu_list li{
+    list-style: none;
+    color: #fff;
+}
+
+#main_content{
+    width: 1500px;
+    height: 800px;
+    background: lightgreen;
+}
+
+
+

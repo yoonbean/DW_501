@@ -1,0 +1,95 @@
+/* homework.css
+<!-- 로고에 태그로 링크. -->
+<!-- 회원가입 페이지 링크로 별도 만들기. -->
+<!-- 메뉴 중 하나 골라서 페이지 별도로 만들어서 링크하기. -->
+<!-- 간격 주의, 확대 축소 시 깨지는 것 주의. --> */
+body, div, ul{
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header{
+    width: 2000px;
+    height: 100px;
+    background: #6a84b7;
+    margin: 0 auto;
+    display: flex;
+}
+
+#logo_box{
+    width: 500px;
+    height: 100px;
+    background: red;
+}
+
+#logo_menu{
+    width: 1500px;
+    height: 100px;
+    background: blue;
+}
+
+#account_box{
+    display:flex;
+}
+
+#content{
+    width: 2000px;
+    height: 800px;
+    background: black;
+    margin: 0 auto;
+    display: flex;
+}
+
+#aside_content{
+    width: 500px;
+    height: 800px;
+    background: green;
+}
+
+#login_box{
+    width: 500px;
+    height: 200px;
+    background: #fff;
+}
+
+#aside_menu{
+    width: 500px;
+    height: 600px;
+    background: yellow;
+    position: relative;
+}
+
+#aside_menu_list{
+    width: 200px;
+    height: 200px;
+    background: black;
+    position: absolute;
+    right:166px;
+    top: 50px;
+}
+
+#aside_menu_list li{
+    list-style: none;
+    color: #fff;
+}
+
+#main_content{
+    width: 1500px;
+    height: 800px;
+    background: lightgreen;
+    position: relative;
+}
+
+#main_img_box{
+    width: 1000px;
+    height: 400px;
+    background: #fff;
+    position: absolute;
+    right: 250px;
+    top: 50px;
+}
