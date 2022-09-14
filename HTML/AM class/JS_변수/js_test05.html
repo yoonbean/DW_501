@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_test05.html</title>
+
+    <script>
+        // 랜덤함수 Math.floor(Math.random())
+        // Math.floor 는 소수점 자리 제거 Math.floor(2.14 , 1) -> 2.1
+        // Math.random() : 랜덤함수 0.0000... ~ 0.99999... 중 랜덤값
+
+        // 문제1. 랜덤함수를 사용하여 가위바위보 게임을 만드시오.
+        // 1. 가위 2. 바위 3. 보
+        // 컴퓨터와 가위바위보를 해서 유저의 승, 패, 무 출력
+
+        // var user = parseInt(prompt("1.가위 2.바위 3. 보"));
+        // var com = Math.floor(Math.random()*3)+1;
+        
+        // 방법1. (내 방법, 긴 방법) 
+        // if(user == 1 && com != 1){
+        //     if(com > 2){
+        //         alert("승리 " + "유저: "+user + " 컴퓨터: " +com);
+        //     }
+        //     else if(com < 3 && com > 1 ){
+        //         alert("패배 " + "유저: "+user + " 컴퓨터: " +com);
+        //     }
+        // }else if(user == 1 && com == 1){
+        //     alert("무승부 " + "유저: "+user + " 컴퓨터: " +com);
+        // }
+        // else if(user == 2 && com != 2){
+        //     if(com < 2){
+        //         alert("승리 " + "유저: "+user + " 컴퓨터: " +com);
+        //     }
+        //     else if(com > 2){
+        //         alert("패배 " + "유저: "+user + " 컴퓨터: " +com);
+        //     }
+        // }else if(user == 2 && com == 2){
+        //     alert("무승부 " + "유저: "+user + " 컴퓨터: " +com);
+        // }
+        // else if(user == 3 && com != 3){
+        //     if(com < 3 && com > 1){
+        //         alert("승리 " + "유저: "+user + " 컴퓨터: " +com);
+        //     }
+        //     else if(com < 2){
+        //         alert("패배 " + "유저: "+user + " 컴퓨터: " +com);
+        //     }
+        // }else if(user == 3 && com == 3){
+        //     alert("무승부 " + "유저: "+user + " 컴퓨터: " +com);
+        // }
+
+        // 방법2.
+        // if( user == com){
+        //     document.write("무승부");
+        // }
+        // else if((user == 1 && com == 3) || (user == 2 && com ==1) || (user == 3 && com ==2)){
+        //     document.write("승리");
+        // }else{
+        //     document.wirte("패배");
+        // }
+
+        // 문제2. 주차장 요금
+        // 주차장 기본 요금: 1000원 (1000원에 기본시간 30분)
+        // 10분당 100원 추가 요금
+        // 2시간 이상 주차 시 기본 요금 1700원으로 변경(2시간에 1700원)
+        // 4시간 이상 주차 시 기본 요금 2700원으로 변경(4시간에 2700원)
+        // 8시간 이상 주차 시 기본 요금 5000원(추가 요금 없음)
+
+        // 주차시간을 입력받아 요금 구하기(주차 시간은 시간, 분 따로 입력 예) 주차시간 2 34 -> 2시간 34분 주차 -> 요금은 2000원)
+        // var p_h = parseInt(prompt("시간"));
+        // var p_m = parseInt(prompt("분"));
+        // var pay = 0;
+        // var total_time = (p_h*60)+p_m;
+
+        // if( p_h >= 8){
+        //    pay=5000;
+        //    tatal_time=0; 
+        // }
+        // else if( p_h  >= 4){
+        //     pay = 2700;
+        //     total_time = tatal_time -240;
+        // }
+        // else if( p_h >=2 ){
+        //     pay = 1700;
+        //     total_time=total_time -120;
+        // }
+        // else if( total_time >=30){
+        //     total_time=total_time-30;
+        // }
+
+        // var price = pay + parseInt((total_time / 10)*100);
+        // price = (p_h == 0)&(p_m <= 30) ? pay : price;
+        // document.write(price);
+
+        // if 문 : 조건식의 참(true), 거짓(false)에 의해서 동작
+        //  if 문에 사용될 조건식은 범위가 큰 것부터 조건식 작성
+        //  if 문은 가정 하에 만들어야 한다.
+        //  예를 들어 바이킹 탑승 제한 150이상 190이하라면
+        //  만일 내가 키를 145라고 입력한다면 조건식은 거짓이 되도록
+        //            키를 175라고 입력한다면 조건식은 참이 되도록 만드는 것.
+
+        // 문자열로 if문 작성
+        // 인적성
+        var name = prompt("이름");
+        var addr = prompt("주소");
+        var email = prompt("이메일");
+        var job = prompt("직업");
+        var school = "";
+
+        if(job == "학생"){
+            school = prompt("재학중인 학교 이름");
+        }
+        
+        // 핸드폰번호 입력 - 없이 입력하기
+        var phone = prompt("핸드폰 번호 입력");
+        if(phone.contain("-")){
+            alert("-없이 입력하세요.");
+        }
+</script>
+</head>
+<body>
+    
+</body>
+</html>
