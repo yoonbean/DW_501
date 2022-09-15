@@ -1,76 +1,151 @@
 /* homework.css
-<!-- 로고에 태그로 링크. -->
 <!-- 회원가입 페이지 링크로 별도 만들기. -->
 <!-- 메뉴 중 하나 골라서 페이지 별도로 만들어서 링크하기. -->
 <!-- 간격 주의, 확대 축소 시 깨지는 것 주의. --> */
-body, div, ul{
+*{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+ul, li{
+    list-style: none;
 }
 
 #main{
-    width: 100%;
-    margin: 0 auto;
+    width: 1700px;
+    height: auto;
 }
 
 #header{
-    width: 2000px;
+    width: 1700px;
     height: 100px;
-    background: #6a84b7;
-    margin: 0 auto;
     display: flex;
 }
 
 #logo_box{
-    width: 500px;
+    width: 300px;
     height: 100px;
-    background: red;
+    background: #E60012;
 }
 
-#logo_menu{
-    width: 1500px;
-    height: 100px;
-    background: blue;
+#logo_box img{
+    max-width: 300px;
+    max-height: 100px;
 }
 
 #account_box{
     display:flex;
 }
 
-#content{
-    width: 2000px;
-    height: 800px;
-    background: black;
-    margin: 0 auto;
-    display: flex;
-}
-
-#aside_content{
-    width: 500px;
-    height: 800px;
-    background: green;
-}
-
 #login_box{
-    width: 500px;
+    width: 300px;
     height: 200px;
     background: #fff;
 }
 
+#id_box{
+    display: flex;
+    margin-left: 40px;
+}
+#pw_box{
+    display: flex;
+    margin-left: 40px;
+}
+
+.login_input input{
+    width: 200px;
+    margin-top: 20px;
+    border: none;
+    border: 3px solid #dfdfdf;
+    border-radius: 6px;
+}
+
+.login_input ::placeholder{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+}
+
+.login_bt{
+    width: 100px;
+    height: 50px;
+}
+
+.login_bt button{
+    width: 200px;
+    height: 30px;
+    border: 3px solid #dfdfdf;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-left: 40px;
+    background: #fff;
+}
+
+.login_bt button:hover{
+    background: #E60012;
+    cursor: pointer;
+}
+
+.login_bt button:hover a{
+    background: #E60012;
+    color: #fff;
+    cursor: pointer;
+} 
+
+.login_bt button a{
+    text-decoration: none;
+}
+
+.login_bt button a:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+
+#account_box{
+    width:300px;
+    height: 200px;
+    display: flex;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.sign_ing_bt button{
+    width: 64px;
+    height: 30px;
+    font-size: 12px;
+    border: 3px solid #fff;
+    border-radius: 6px;
+   
+}
+
+.sign_ing_bt button a{
+    text-decoration: none;
+    color: black;
+}
+
+.find button{
+    width: 144px;
+    height: 30px;
+    border: 3px solid #fff;
+    border-radius: 6px;
+}
+
+.find button a{
+    text-decoration: none;
+}
+
 #aside_menu{
-    width: 500px;
+    width: 300px;
     height: 600px;
-    background: yellow;
-    position: relative;
+    
 }
 
 #aside_menu_list{
     width: 200px;
     height: 200px;
-    background: black;
-    position: absolute;
-    right:166px;
-    top: 50px;
 }
 
 #aside_menu_list li{
@@ -78,18 +153,57 @@ body, div, ul{
     color: #fff;
 }
 
-#main_content{
-    width: 1500px;
-    height: 800px;
-    background: lightgreen;
-    position: relative;
+#aside_menu_list button{
+    width: 300px;
+    height: 100px;
+    background: #fff;
+    border-top: 1px;
+    border-right: 1px;
+    border-left: 1px;
 }
 
-#main_img_box{
-    width: 1000px;
-    height: 400px;
-    background: #fff;
-    position: absolute;
-    right: 250px;
-    top: 50px;
+#aside_menu_list button a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+#aside_menu_list button:hover{
+    color: #FFBB00;
+}
+
+#content{
+    width: 1700px;
+    height: 800px;
+    display: flex;
+}
+
+#aside_content{
+    width: 300px;
+    height:800px;
+}
+
+#main_content{
+    width: 1400px;
+    height: 800px;
+    display: flex;
+}
+
+#main_img{
+    width: 1400px;
+    height: 800px;
+}
+.main_img_item{
+    max-width: 1200px;
+    max-height: 400px;
+}
+
+#sub_img{
+    width: 400px;
+    height: 300px;
+}
+
+.sub_img_item{
+    max-width: 500px;
+    max-height: 400px;
 }
