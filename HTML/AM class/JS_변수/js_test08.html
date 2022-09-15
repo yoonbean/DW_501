@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_test08</title>
+    <script>
+        // html에 표현 할 수 있는 방식.
+            // 정적 할당
+            // document.getElementById("id명");
+            // document.getElementsByClassName("class명");
+            // document.getElementsByName("name명");
+            // document.getElementsByTagName("tag명");
+                // id 또는 class가 ()인 태그(Element) 를 가져올 때 객체(비슷한 형태지만 서로 다른)로 가져온다.
+                // id를 제외하고는 다 복수형태.
+            // 동적 할당
+            // document.querySelector("#id명"); 
+            // document.querySelector(".class명"); // class가 한곳에만 할당된 경우.
+            // document.querySelectorAll(".class명"); // class가 여러곳에 할당된 경우.
+            // document.querySelectorAll("tag명"); // 태그 이름
+            // document.wuerySelectorAll("[name명]"); 
+        function data_push(){
+            var number = document.getElementById("num");
+            var val = paseInt(number.value);
+            var res = document.getElementById("result");         
+            if( val % 2 == 0){
+                res.innerHTML = val + " 은(는) 짝수";   
+            }else{
+                res.innerHTML = val + " 은(는) 홀수";   
+            }
+        }
+      
+        // 입력 값이 짝수인지 홀수인지 출력하시오.
+
+    </script>
+</head>
+<body>
+    <input type="text" name="num" id="num" />
+    <button type="button" onclick="data_push()">입력</button>
+    <hr />
+    <div id="result">
+
+    </div>
+</body>
+</html>

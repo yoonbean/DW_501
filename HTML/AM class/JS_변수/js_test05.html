@@ -15,50 +15,50 @@
         // 1. 가위 2. 바위 3. 보
         // 컴퓨터와 가위바위보를 해서 유저의 승, 패, 무 출력
 
-        // var user = parseInt(prompt("1.가위 2.바위 3. 보"));
-        // var com = Math.floor(Math.random()*3)+1;
+        var user = parseInt(prompt("1.가위 2.바위 3. 보"));
+        var com = Math.floor(Math.random()*3)+1;
         
         // 방법1. (내 방법, 긴 방법) 
-        // if(user == 1 && com != 1){
-        //     if(com > 2){
-        //         alert("승리 " + "유저: "+user + " 컴퓨터: " +com);
-        //     }
-        //     else if(com < 3 && com > 1 ){
-        //         alert("패배 " + "유저: "+user + " 컴퓨터: " +com);
-        //     }
-        // }else if(user == 1 && com == 1){
-        //     alert("무승부 " + "유저: "+user + " 컴퓨터: " +com);
-        // }
-        // else if(user == 2 && com != 2){
-        //     if(com < 2){
-        //         alert("승리 " + "유저: "+user + " 컴퓨터: " +com);
-        //     }
-        //     else if(com > 2){
-        //         alert("패배 " + "유저: "+user + " 컴퓨터: " +com);
-        //     }
-        // }else if(user == 2 && com == 2){
-        //     alert("무승부 " + "유저: "+user + " 컴퓨터: " +com);
-        // }
-        // else if(user == 3 && com != 3){
-        //     if(com < 3 && com > 1){
-        //         alert("승리 " + "유저: "+user + " 컴퓨터: " +com);
-        //     }
-        //     else if(com < 2){
-        //         alert("패배 " + "유저: "+user + " 컴퓨터: " +com);
-        //     }
-        // }else if(user == 3 && com == 3){
-        //     alert("무승부 " + "유저: "+user + " 컴퓨터: " +com);
-        // }
+        if(user == 1 && com != 1){
+            if(com > 2){
+                alert("승리 " + "유저: "+user + " 컴퓨터: " +com);
+            }
+            else if(com < 3 && com > 1 ){
+                alert("패배 " + "유저: "+user + " 컴퓨터: " +com);
+            }
+        }else if(user == 1 && com == 1){
+            alert("무승부 " + "유저: "+user + " 컴퓨터: " +com);
+        }
+        else if(user == 2 && com != 2){
+            if(com < 2){
+                alert("승리 " + "유저: "+user + " 컴퓨터: " +com);
+            }
+            else if(com > 2){
+                alert("패배 " + "유저: "+user + " 컴퓨터: " +com);
+            }
+        }else if(user == 2 && com == 2){
+            alert("무승부 " + "유저: "+user + " 컴퓨터: " +com);
+        }
+        else if(user == 3 && com != 3){
+            if(com < 3 && com > 1){
+                alert("승리 " + "유저: "+user + " 컴퓨터: " +com);
+            }
+            else if(com < 2){
+                alert("패배 " + "유저: "+user + " 컴퓨터: " +com);
+            }
+        }else if(user == 3 && com == 3){
+            alert("무승부 " + "유저: "+user + " 컴퓨터: " +com);
+        }
 
         // 방법2.
-        // if( user == com){
-        //     document.write("무승부");
-        // }
-        // else if((user == 1 && com == 3) || (user == 2 && com ==1) || (user == 3 && com ==2)){
-        //     document.write("승리");
-        // }else{
-        //     document.wirte("패배");
-        // }
+        if( user == com){
+            document.write("무승부");
+        }
+        else if((user == 1 && com == 3) || (user == 2 && com ==1) || (user == 3 && com ==2)){
+            document.write("승리");
+        }else{
+            document.wirte("패배");
+        }
 
         // 문제2. 주차장 요금
         // 주차장 기본 요금: 1000원 (1000원에 기본시간 30분)
@@ -68,30 +68,30 @@
         // 8시간 이상 주차 시 기본 요금 5000원(추가 요금 없음)
 
         // 주차시간을 입력받아 요금 구하기(주차 시간은 시간, 분 따로 입력 예) 주차시간 2 34 -> 2시간 34분 주차 -> 요금은 2000원)
-        // var p_h = parseInt(prompt("시간"));
-        // var p_m = parseInt(prompt("분"));
-        // var pay = 0;
-        // var total_time = (p_h*60)+p_m;
+        var p_h = parseInt(prompt("시간"));
+        var p_m = parseInt(prompt("분"));
+        var pay = 0;
+        var total_time = (p_h*60)+p_m;
 
-        // if( p_h >= 8){
-        //    pay=5000;
-        //    tatal_time=0; 
-        // }
-        // else if( p_h  >= 4){
-        //     pay = 2700;
-        //     total_time = tatal_time -240;
-        // }
-        // else if( p_h >=2 ){
-        //     pay = 1700;
-        //     total_time=total_time -120;
-        // }
-        // else if( total_time >=30){
-        //     total_time=total_time-30;
-        // }
+        if( p_h >= 8){
+           pay=5000;
+           tatal_time=0; 
+        }
+        else if( p_h  >= 4){
+            pay = 2700;
+            total_time = tatal_time -240;
+        }
+        else if( p_h >=2 ){
+            pay = 1700;
+            total_time=total_time -120;
+        }
+        else if( total_time >=30){
+            total_time=total_time-30;
+        }
 
-        // var price = pay + parseInt((total_time / 10)*100);
-        // price = (p_h == 0)&(p_m <= 30) ? pay : price;
-        // document.write(price);
+        var price = pay + parseInt((total_time / 10)*100);
+        price = (p_h == 0)&(p_m <= 30) ? pay : price;
+        document.write(price);
 
         // if 문 : 조건식의 참(true), 거짓(false)에 의해서 동작
         //  if 문에 사용될 조건식은 범위가 큰 것부터 조건식 작성
