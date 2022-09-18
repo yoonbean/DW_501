@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rcs.html</title>
+    <link rel="stylesheet" href="rcs.css">
+
+</head>
+<body >
+    <div id="game_wrap">
+        <div id="game">
+            <img src="rcs_bg_img.jpg" id="bg_img">
+            
+            <div id="com_select">
+                <img src="img_가위.png" alt="com선택: 가위" id="pc_img">
+            </div>
+            
+            <div id="user_bt">
+                <button id="siccor" class="btn">
+                    <img src="img_가위.png" id="img_siccor">
+                </button>
+                <button id="rock" class="btn">
+                    <img src="img_바위.png" id="img_rock">
+                </button>
+                <button id="paper" class="btn">
+                    <img src="img_보.png" id="img_paper">
+                </button>
+                <button id="reset" class="btn">
+                    리셋
+                </button>
+            </div>
+        
+        </div>
+
+        <div id="result">
+            
+        </div>
+        <div id="score">
+
+        </div>
+    </div>
+    
+</body>
+<script>
+    var count = 0;
+    var winCount = 0;
+    var drawCount = 0;
+    var loseCount = 0;
+    var playerScore = 0;
+    var pcScore = 0;
+
+    var timer = 0;
+    var lastPcSelection = "";
+    var pcSelection = "";
+
+    function changeComSelct(){
+        while (true) {
+        pcSelection = getRandom();
+
+            if (pcSelection !== lastPcSelection) {
+                lastPcSelection = pcSelection; 
+            }
+        }
+
+        switch(com_select){
+        case 0:
+            pc_img.src ="img_가위.png";
+            break;
+        case 1:
+            pc_img.src ="img_바위.png";
+            break;
+        case 2:
+            pc_img.src ="img_보.png";
+            break;
+        default:
+        }
+    }
+
+    function getRandom() {
+        return parseInt(Math.random() * 3); 
+    }
+    var user_bt = document.getElementsById("user_bt")[0];
+    var scissorsBtn = document.getElementById("siccor");
+    var rockBtn = document.getElementById("rock");
+    var papersBtn = document.getElementById("paper");   
+    
+    
+</script>
+</html>

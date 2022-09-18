@@ -24,4 +24,50 @@ html, css, javascript 사용하여 게임 만들기.
  -로또 당첨번호는 랜덤함수로 여섯 개 출력
  -내가 입력한 숫자와 당첨 번호 비교하여 5등, 4등, 3등, 1등 여부 출력하기  */
 
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+#game{
+	width: 640px;
+	height: 600px;
+	margin: 200px  auto;
+	position: relative;
+}
+
+.btn{
+	top:70%;
+	position: absolute;
+	border: none;
+	border-radius: 6px;
+}
+#siccor{
+	right:370px;
+}
+#siccor img{
+	max-width: 90px;
+	max-height: 120px;
+}
+#rock{
+	right:270px;
+}
+#rock img{
+	max-width: 90px;
+	max-height: 120px;
+}
+#paper{
+	right:170px;
+}
+#paper img{
+	max-width: 90px;
+	max-height: 120px;
+}
+#reset{
+	border: 1px solid #dfdfdf;
+	border-radius: 6px;
+	font-size:20px;
+	top:92%;
+	left: 290px;
+}

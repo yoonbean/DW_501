@@ -22,7 +22,7 @@
             // document.wuerySelectorAll("[name명]"); 
         function data_push(){
             var number = document.getElementById("num");
-            var val = paseInt(number.value);
+            var val = parseInt(number.value);
             var res = document.getElementById("result");         
             if( val % 2 == 0){
                 res.innerHTML = val + " 은(는) 짝수";   
