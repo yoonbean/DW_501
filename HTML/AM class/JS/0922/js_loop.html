@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //반복문
+        // for(초기값; 조건식; 증감식)
+        // 랜덤 값(랜덤 범위 1~100) 중에서 4의 배수만 출력하시오.
+
+        
+        // for(i=1; i<=20; i++){
+        //     var j = Math.floor(Math.random()*100)+1;
+        //     if(j%4==0){
+        //         document.write(" "+j);
+        //     }
+        // }
+
+        // 입력은 prompt로 입력하기
+        // 반복횟수 10번
+        // 랜덤 범위는 1~10
+        // 10번 숫자를 입력하여 입력한 숫자가 랜덤값과 일치하면
+        //  지뢰 밟음 사망, 일치하지 않으면 회피 성공 출력하기.
+        
+        
+        // for(i=1; i<=10; i++){
+        //     var num = 0;
+        //     do{
+        //         num = parseInt(prompt());
+        //     }while( !( num>=1 && num <=10) );
+            
+        //     var r = Math.floor(Math.random()* 10)+1;
+        //     if(num == r) document.write("boom"+num+ ":" + r +"<br>");
+        //     else document.write("miss"+num+ ":" +r + "<br>");
+            
+        // }
+        
+        // for(var i=2; i<=9; i++){
+        //     for(var k=1; k<=9; k++){
+        //         document.write(i+"*"+k+"="+i*k+"<br>");
+        //     }
+        // }
+        
+        // for(var i=5; i>=1; i--){
+        //     for(var k=1; k<=i; k++){
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+        
+        // 비밀번호 찾기
+        // 비밀번호는 총 4자리 숫자다.
+        // 비밀번호 각 자리는 1~9 중 하나이다.
+        // 비밀번호 각 자리는 서로 중복이 없다.
+        // 4자리 숫자 중 첫번 째 숫자는 세번 째 숫자보다 7크다.
+        //  두번 째 숫자는 네번 째 숫자보다 작다.
+        //  비밀번호를 역순으로 한 숫자와 비밀번호를 더하면 16566이다.
+        // 위 조건에 맞는 비밀번호를 4자리를 출력하시오.
+    
+        
+        
+     
+        for(var n1=1; n1<=9; n1++){
+            for(var n2=1; n2<=9; n2++){
+                for(var n3=1; n3<=9; n3++){
+                    for(var n4=1; n4<=9; n4++){
+                     if(n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 &&  n3 != n4){
+                        if(n1 - n3 == 7){
+                            if(n2 < n4){
+                                var pw = (n1*1000)+(n2*100)+(n3*10)+n4;
+                                var pw1 = (n4*1000)+(n3*100)+(n2*10)+n1;
+                                if(pw+pw1 == 16566){
+                                    document.write("비밀번호는 " + pw);
+                                }
+                            }
+                        }
+                     }
+                    }
+                }
+            }
+        }
+        
+    </script>
+</html>
