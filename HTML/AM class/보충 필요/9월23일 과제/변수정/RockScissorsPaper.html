@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Scissors Paper Jame </title>
+
+    <link rel="stylesheet" href="RockScissorsPaper.css">
+   
+</head>
+<body>
+    <div class="wrap">
+        <div class="computer">
+            <div class="img_text">
+                <div class="img">
+                    <div class="com_img">
+                        <img src="computer.png" alt="">
+                    </div>
+                    <div class="com_img">
+                        <img src="1.png" alt="" id="ress" >
+                        <div>            
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                   <h2>computer</h2>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="user">
+            <div class="img_text2">
+                <div class="rsp">
+                    <button onclick="doClick(this)" id="S"><img src="1.png" class="u_scis" alt="" ></button>
+                </div>
+                <div class="rsp">
+                    
+                    <button onclick="doClick(this)" id="R"><img src="2.png" class="u_rock" alt="" ></button>
+                </div>
+                <div class="rsp">
+                    <button onclick="doClick(this)" id="P"><img  src="3.png" class="u_paper" alt="" ></button>
+                </div>
+            </div>
+            <div class="text"> <h1>USER</h1> </div>
+        </div>
+        <hr>
+        <div id="result">
+          결과
+        </div>
+    </div>
+</body>
+
+<script>
+
+        var scis = document.getElementsByClassName("u_scis"); //1
+        var rock = document.getElementsByClassName("u_rock"); //2
+        var paper = document.getElementsByClassName("u_paper"); //3
+
+        var idx =1;
+        var set = "";
+        var resp_count = 0; //here
+        // var interval = setInterval(doClick, 800);
+        window.onload = function start(){ // 눌렀을 때 돌아감
+            set = setInterval(function(){
+                idx++;
+                if(idx == 4){
+                    idx=1;
+                }
+                var img = document.getElementById("ress");
+                img.src = idx+".png";
+            }, 100);
+        }
+    
+        function doClick(object) { 
+            var user = object.id;
+            var com = Math.floor(Math.random()*3)+1;
+            clearInterval(set); //here
+            // console.log(com);
+            if(user == "S"){
+                if(com == 1){
+                    document.getElementById("result").innerHTML = "비겼습니다. <br>";
+                    ress.innerHTML = "1.png"; //here
+                    ress.resp_count++;
+                   
+                }
+                else if( com == 2){
+                    document.getElementById("result").innerHTML = "졌습니다. <br>";
+                    ress.innerHTML = "2.png"; //here
+                    ress.resp_count++;
+                }
+                else if( com == 3 ){
+                    document.getElementById("result").innerHTML = "이겼습니다. <br>";
+                    ress.innerHTML = "3.png"; //here
+                    ress.resp_count++;
+                } 
+            }
+            
+            if(user == "R"){
+                if(com == 1){
+                    document.getElementById("result").innerHTML = "이겼습니다 <br>";
+                    ress.innerHTML = "1.png"; //here
+                    ress.resp_count++;
+                }
+                else if( com == 2){
+                    document.getElementById("result").innerHTML = "비겼습니다. <br>";
+                    ress.innerHTML = "2.png"; //here
+                    ress.resp_count++;
+                }
+                else if( com == 3 ){
+                    document.getElementById("result").innerHTML = "졌습니다.. <br>";
+                    ress.innerHTML = "3.png"; //here
+                    ress.resp_count++;
+                } 
+            }
+            if(user == "P"){
+                if(com == 1){
+                    document.getElementById("result").innerHTML = "졌습니다. <br>";
+                    ress.innerHTML = "1.png"; //here
+                    ress.resp_count++;
+                }
+                else if( com == 2){
+                    document.getElementById("result").innerHTML = "이겼습니다 <br>";
+                    ress.innerHTML = "2.png"; //here
+                    ress.resp_count++;
+                }
+                else if( com == 3 ){
+                    document.getElementById("result").innerHTML = "비겼습니다. <br>";
+                    ress.innerHTML = "3.png"; //here
+                    ress.resp_count++;
+                } 
+            }
+            
+        }
+          
+
+  
+
+</script>
+
+</html>

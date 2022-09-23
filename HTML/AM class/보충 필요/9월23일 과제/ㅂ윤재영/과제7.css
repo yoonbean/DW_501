@@ -1,0 +1,153 @@
+/* 과제7.css */
+
+.top{
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    padding: 0 auto;
+    background: pink;
+}
+
+.com{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.com img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.box{
+    width: 800px;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-top: 50px;
+    
+}
+
+.box_box{
+    width: 800px;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-right: 95px;
+
+    
+}
+
+.rock_box{
+    width: 60px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0 auto;
+    
+}
+
+.paper_box{
+    width: 60px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.scissors_box{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.rps_box{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.rps img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.bt_box{
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-top: 50px;
+}
+
+.rock_bt{
+    width: 200px;
+    height: 190px;
+    /* background-image: url("rock.gif"); */
+}
+
+.paper_bt{
+    width: 200px;
+    height: 190px;
+    /* background-image: url("paper.gif"); */
+}
+
+.scissors_bt{
+    width: 200px;
+    height: 190px;
+    /* background-image: url("scissors.gif"); */
+}
+
+#rere{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+}
+
+#start {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+}
+
+#rock_img{
+    width: 150px;
+    height: 150px;
+}
+
+#paper_img{
+    width: 150px;
+    height: 150px;
+}
+
+#scissors_img{
+    width: 150px;
+    height: 150px;
+}
+
+#bt1{
+    text-align: center;
+}
+
+#start1 {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
